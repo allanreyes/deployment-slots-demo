@@ -1,4 +1,6 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@inject IConfiguration config
+
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">BlazorAppDemo</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
@@ -25,6 +27,10 @@
             </NavLink>
         </div>
     </nav>
+    <footer>
+          <span>v.@config["AppVersion"]</span>
+    </footer>
+
 </div>
 
 @code {

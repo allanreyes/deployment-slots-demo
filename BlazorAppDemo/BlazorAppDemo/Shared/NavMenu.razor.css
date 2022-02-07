@@ -60,3 +60,10 @@
         display: block;
     }
 }
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    left: 25px;
+    color: white;
+}
